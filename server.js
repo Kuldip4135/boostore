@@ -8,6 +8,7 @@ const port = process.env.PORT || 3000;
 const expressLayouts = require("express-ejs-layouts");
 //to use ejs varibales(inputed author name)
 const bodyParser = require("body-parser");
+const methodOverride = require("method-override");
 
 //routing
 const indexRouter = require("./routes/index");
@@ -19,6 +20,9 @@ app.set("views", __dirname + "/views");
 app.set("layout", "layouts/layout");
 //for express-ejs-layouts
 app.use(expressLayouts);
+
+app.use(methodOverride("_method"));
+
 //for our css & js
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ limit: "10mb", extended: false }));
