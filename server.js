@@ -35,7 +35,7 @@ mongoose.connect(process.env.DATABSE_URL, {
   useUnifiedTopology: true,
 });
 const db = mongoose.connection;
-db.on("error", (error) => console.log(error));
+db.on("error", (error) => console.log("error"));
 db.once("open", (error) => console.log("Connection Successfull"));
 
 //all out page routing
