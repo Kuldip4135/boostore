@@ -1,0 +1,38 @@
+.nav-logo {
+  color: var(--color-text--light);
+  text-decoration: none;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 5rem;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li a {
+  font-size: 1.6rem;
+  color: var(--color-text--light);
+  padding: 1rem 2rem;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: white;
+  color: royalblue;
+  border-radius: 0.5rem;
+}
+
+.page-header {
+  font-size: 2rem;
+  letter-spacing: 1px;
+  font-weight: 400;
+}

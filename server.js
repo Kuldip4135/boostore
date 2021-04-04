@@ -38,7 +38,7 @@ const db = mongoose.connection;
 db.on("error", (error) => console.log("error"));
 db.once("open", (error) => console.log("Connection Successfull"));
 
-//all out page routing
+//all our page routing
 app.use("/", indexRouter);
 app.use("/authors", authorRouter);
 app.use("/books", bookRouter);

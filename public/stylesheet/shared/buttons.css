@@ -1,0 +1,46 @@
+.btn {
+  font-size: 1.4rem;
+  text-decoration: none;
+  text-align: center;
+  padding: 0.5rem 2rem;
+  border-radius: 0.5rem;
+  color: #eee;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.btn-primary {
+  background-color: #eee;
+  color: royalblue;
+}
+
+.btn-primary:hover {
+  background-color: rgb(90, 126, 233);
+  color: #eee;
+}
+
+.btn-info {
+  background-color: green;
+}
+
+.btn-info:hover {
+  background-color: forestgreen;
+}
+
+.btn-danger {
+  background-color: red;
+}
+
+.btn-danger:hover {
+  background-color: rgb(218, 1, 1);
+}
+
+.btn-row {
+  display: flex;
+  align-items: flex-end;
+}
+
+.btn-row > *:not(:first-child) {
+  margin-left: 1rem;
+}
